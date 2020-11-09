@@ -1,4 +1,4 @@
-PROJECT TITLE: Concurrent Programming.erl
+PROJECT TITLE: Functional Programming.erl
 PURPOSE OF PROJECT: Stage 2 of University, Functional and Concurrent Programming ~ Assignment 2
 VERSION or DATE: 28/02/2020
 AUTHORS: Wai Shan (Karen) Yip
@@ -18,3 +18,37 @@ isxwin takes a line of the board and determines whether it is a winning line of 
 linexwin takes the whole board and determines whether it contains a winning line of crosses or not.
 pick takes an integer N and a list Xs and returns the Nth element of the list starting from 0.
 wincol takes a whole board and determines whether there is any winning column.
+
+
+PROJECT TITLE: Concurrent Programming.erl
+PURPOSE OF PROJECT: Stage 2 of University, Functional and Concurrent Programming ~ Assignment 4
+VERSION or DATE: 17/04/2020
+AUTHORS: Wai Shan (Karen) Yip
+EXPLANATION: 
+This assignment focuses on the implementation of the concurrency problem of Producer-Consumer.
+Producer and Consumer both have access to a shared buffer.
+The Producer continuously generates data and adds it to the end of the queue.
+The Consumer repeatedly removes data from the front of the queue.
+The Producer must wait if the queue is full.
+The Consumer must wait if the queue is empty.
+Deadlock occurs if the Producer waits due to the queue being full but does not generate data again when the Consumer empties the queue.
+The buffer is a process that co-ordinates the producer and consumer.
+
+1.
+The Producer sends a string message to the process Logger.
+logger repeatedly receives string messages and prints them out whilst counting the amount it has received.
+
+2.
+The consumer sends a request to buffer B to see if it is empty.
+If the buffer is not empty, the consumer requests some data from the buffer and waits to receive it.
+If the buffer is empty, the consumer waits for the notification that the buffer is not empty anymore.
+
+3.
+Buffer handles the messages sent by he producer and consumer.
+BufferData is a list representing the queue stored in the buffer.
+MaxSize is the maximum size of the queue.
+WaitingConsumer is either none or is the processID of the waiting consumer.
+WaitingProducer is either none or is the processID of the waiting producer.
+
+4.
+main implements a nullary function which spawns and connects the producer, consumer, logger and buffer.
