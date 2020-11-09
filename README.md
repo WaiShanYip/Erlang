@@ -1,6 +1,6 @@
 # Erlang
 
-PROJECT TITLE: Concurrent Programming.erl 
+PROJECT TITLE: Concurrent Programming.erl
 PURPOSE OF PROJECT: Stage 2 of University, Functional and Concurrent Programming ~ Assignment 2
 VERSION or DATE: 28/02/2020
 AUTHORS: Wai Shan (Karen) Yip
