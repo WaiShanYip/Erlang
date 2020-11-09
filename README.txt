@@ -52,3 +52,11 @@ WaitingProducer is either none or is the processID of the waiting producer.
 
 4.
 main implements a nullary function which spawns and connects the producer, consumer, logger and buffer.
+
+
+PROJECT TITLE: classwork.erl
+PURPOSE OF PROJECT: Practising Functional Programming
+VERSION or DATE: 28/01/2020
+AUTHORS: Wai Shan (Karen) Yip
+EXPLANATION: 
+This contains some practise of Functional Programming which I completed in preparation for the in class exam. 
